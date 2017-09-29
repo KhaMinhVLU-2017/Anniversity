@@ -1,0 +1,385 @@
+body{
+	margin:0;
+}
+
+
+#header{
+	width: 100%;
+	text-align: center;
+	position: fixed;
+}
+.main-back{
+	background-image: url('Images/love.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 20em;
+}
+#sub-main{
+	height: 6em;
+	width: 6em;
+	left: 15%;
+	top: 10%;
+	position: absolute;
+	text-align: center;
+}
+#sub-main h4{
+	display: inline;
+}
+#sub-main h1,h4{
+	color:#FF1493;
+	text-shadow: 2px 2px 1px black;
+}
+
+@media screen and (min-width: 600px){
+	.main-back{
+		width: 100%;
+		height: 60em;
+		margin: 0 auto;
+	}
+	#sub-main{
+	height: 10em;
+	width: 16em;
+	left: 30%;
+	top: 35%;
+	position: absolute;
+	text-align: center;
+	}
+	#sub-main h1,h4{
+	color:#FF1493;
+	text-shadow: 2px 2px 1px black;
+	font-size: 3em;
+	}
+	.content{
+		background: purple;
+		position: absolute;
+		width: 100%;
+		top: 70%;
+		height: 20%;
+		opacity: 0.6;
+	}
+
+	@-webkit-keyframes typing { from { width: 0; } }
+	@-webkit-keyframes blink-caret { 100% { border-color: transparent; } }
+
+	.content h4 { 
+    font: bold 120% Consolas, Monaco, monospace;
+    border-right: .1em solid transparent;
+    width: 5em; 
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(21, end),
+               blink-caret .5s step-end infinite alternate;
+	}
+	.Minh{
+		width: 50%;
+		height: 20%;
+		position: absolute;
+		top: 10%;
+	}
+	@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+	svg {
+    display: block;
+    font: 15em 'Montserrat';
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+	}
+
+	.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+	}
+
+	.text-copy:nth-child(1){
+    stroke: #C8FF02;
+    animation-delay: -1;
+	}
+
+	.text-copy:nth-child(2){
+    stroke: #ffffff;
+    animation-delay: -2s;
+	}
+
+	.text-copy:nth-child(3){
+    stroke: #000000;
+    animation-delay: -3s;
+	}
+
+	.text-copy:nth-child(4){
+    stroke: #C8FF02;
+    animation-delay: -4s;
+	}
+
+	.text-copy:nth-child(5){
+    stroke: #ffffff;
+    animation-delay: -5s;
+	}
+
+	@keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+	}
+	/*man chu~ dât*/
+	@font-face {
+  		font-family: neon;
+ 	 	src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+	}
+
+	article.Nhi {
+ 		display: table-cell;
+  		text-align: center;
+ 		vertical-align: middle;
+ 		width: 50%;
+		height: 20%;
+		left: 50%;
+		top: 10%;
+		position: absolute;
+	}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 10vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35;
+  top: 30%;
+  left: 0%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 10vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+  position: absolute;
+  top:30%;
+  left: 33%;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+}
+@media screen and (max-width: 600px){
+		.main-back{
+		width: 100%;
+		height: 60em;
+	}
+	#sub-main{
+	height: 10em;
+	width: 16em;
+	left: 10%;
+	top: 30%;
+	position: absolute;
+	text-align: center;
+	}
+	#sub-main h1,h4{
+	color:#FF1493;
+	text-shadow: 2px 2px 1px black;
+	font-size: 3em;
+	}
+	.content{
+		background: purple;
+		position: absolute;
+		width: 100%;
+		top: 70%;
+		height: 20%;
+		opacity: 0.6;
+	}
+
+	@-webkit-keyframes typing { from { width: 0; } }
+	@-webkit-keyframes blink-caret { 100% { border-color: transparent; } }
+
+	.content h4 { 
+	margin-top: -1em;
+    font: bold 120% Consolas, Monaco, monospace;
+    border-right: .1em solid transparent;
+    width: 5em; 
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(21, end),
+               blink-caret .5s step-end infinite alternate;
+	}
+	.Minh{
+		width: 50%;
+		height: 20%;
+		position: absolute;
+		top: 8%;
+	}
+	@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+	svg {
+    display: block;
+    font: 15em 'Montserrat';
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+	}
+
+	.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+	}
+
+	.text-copy:nth-child(1){
+    stroke: #C8FF02;
+    animation-delay: -1;
+	}
+
+	.text-copy:nth-child(2){
+    stroke: #ffffff;
+    animation-delay: -2s;
+	}
+
+	.text-copy:nth-child(3){
+    stroke: #000000;
+    animation-delay: -3s;
+	}
+
+	.text-copy:nth-child(4){
+    stroke: #C8FF02;
+    animation-delay: -4s;
+	}
+
+	.text-copy:nth-child(5){
+    stroke: #ffffff;
+    animation-delay: -5s;
+	}
+
+	@keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+	}
+	/*man chu~ dât*/
+	@font-face {
+  		font-family: neon;
+ 	 	src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+	}
+
+	article.Nhi {
+ 		display: table-cell;
+  		text-align: center;
+ 		vertical-align: middle;
+ 		width: 50%;
+		height: 20%;
+		left: 50%;
+		top: 10%;
+		position: absolute;
+	}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 10vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35;
+  top: 30%;
+  left: 0%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 10vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+  position: absolute;
+  top:30%;
+  left: 33%;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+}
